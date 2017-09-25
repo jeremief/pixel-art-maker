@@ -3,6 +3,9 @@
 
 // When size is submitted by the user, call makeGrid()
 
+jQuery(document).ready(function(){
+
+
 function makeGrid() {
 
 // Your code goes here!
@@ -12,15 +15,13 @@ const height = $('#input_height').val();
 const width = $('#input_width').val();
 const color = $('#colorPicker').val();
 
-console.log('height = '+ height);
-console.log('width = ' + width);
-console.log('color = '+ color);
-console.log("hi");
+alert('height = '+ height);
+alert('width = ' + width);
+alert('color = '+ color);
 
 }
 
-$("#submission").on('click', makeGrid());
+$(":submit").click(makeGrid);
 
-// makeGrid();
-
+});
 
