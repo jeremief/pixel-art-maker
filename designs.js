@@ -38,13 +38,15 @@ event.preventDefault();
 }
 
 
-$(":submit").click(makeGrid);
+$("#grid_submit").click(makeGrid);
 
 
 $('#pixel_canvas').on('click', 'td', function(){
     const color = $('#colorPicker').val();
     $(this).attr('bgcolor',color);
 });
+
+
 
 });
 
