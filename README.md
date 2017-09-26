@@ -8,12 +8,12 @@ SCREENSHOT
 ## Table of Contents
 
 * [Description](#description)
-* [How to install](#how to install)
-* [How to get started](#how to get started)
+* [How to install](#how-to-install)
+* [How to get started](#how-to-get-started)
 * [Examples](#examples)
-* [Issues and known bugs](#issues and known bugs)
-* [More information](#more information)
-* [How to get involved](#how to get involved)
+* [Issues and known bugs](#issues-and-known-bugs)
+* [More information](#more-information)
+* [How to get involved](#how-to-get-involved)
 * [FAQS](#faqs)
 * [Licence](#licence)
 * [About](#about)
