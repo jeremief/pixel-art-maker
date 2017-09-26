@@ -37,8 +37,19 @@ event.preventDefault();
 
 }
 
+function paintCell() {
+    const color = $('#colorPicker').val();
+    $(this).attr('background-color',color);
+}
+
+
 $(":submit").click(makeGrid);
 
+
+$('#pixel_canvas').on('click', 'td', function(){
+    const color = $('#colorPicker').val();
+    $(this).attr('bgcolor',color);
+});
 
 });
 
