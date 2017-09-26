@@ -1,16 +1,64 @@
 # Pixel Art Maker Project
 
+
+SCREENSHOT
+![Alt text](/pic/path/pic_name.png?raw=true "Hovering text" =WIDTHxHEIGHT)
+
+
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+* [Description](#description)
+* [How to install](#how to install)
+* [How to get started](#how to get started)
+* [Examples](#examples)
+* [Issues and known bugs](#issues and known bugs)
+* [More information](#more information)
+* [How to get involved](#how to get involved)
+* [FAQS](#faqs)
+* [Licence](#licence)
+* [About](#about)
 
-## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+## Description
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
-## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## How to install
+
+
+
+
+## How to get started 
+
+
+
+## Examples 
+
+
+
+
+## Issues and known bugs 
+
+
+
+
+## More information
+
+
+
+
+## How to get involved
+
+
+
+## FAQS
+
+
+
+
+## Licence
+
+
+
+
+## About

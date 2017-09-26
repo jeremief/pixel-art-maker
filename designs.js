@@ -37,11 +37,6 @@ event.preventDefault();
 
 }
 
-function paintCell() {
-    const color = $('#colorPicker').val();
-    $(this).attr('background-color',color);
-}
-
 
 $(":submit").click(makeGrid);
 
