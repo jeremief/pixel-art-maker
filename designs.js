@@ -11,6 +11,12 @@ function deleteGrid(){
     event.preventDefault();
 }
 
+
+function paintCell (cell) {
+    const color = $('#colorPicker').val();
+    $(cell).attr('bgcolor',color);
+}
+
 function makeGrid() {
 
 //Capture values of grid
@@ -42,14 +48,12 @@ event.preventDefault();
 
 }
 
-function clear_grid(){
-    // Prevent the refresh of the page
-    // event.preventDefault();
+function clearGrid(){
     let grid = $('#pixel_canvas').children();
 
 }
 
-function paint_grid(){
+function paintGrid(){
 
 }
 
@@ -59,12 +63,10 @@ $("#grid_submit").click(makeGrid);
 $("#delete_grid").click(deleteGrid);
 
 
+// Painting cell outside function
 $('#pixel_canvas').on('click', 'td', function(){
-    const color = $('#colorPicker').val();
-    $(this).attr('bgcolor',color);
+    paintCell(this);
 });
-
-
 
 });
 
