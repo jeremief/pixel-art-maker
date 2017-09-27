@@ -12,9 +12,9 @@
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="1" value="3">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="1" value="3">
         <input id="grid_submit" type="submit">
     </form>
 
@@ -23,9 +23,9 @@
 
     <h2>Design Canvas</h2>
     <form>
-        <button>Clear Grid</button>
-        <button>Paint Grid</button>
-        <button>Delete Grid</button>
+        <button id="clear_grid">Clear Grid</button>
+        <button id="paint_grid">Paint Grid</button>
+        <button id="delete_grid">Delete Grid</button>
     </form>
     <br>
     <table id="pixel_canvas"></table>

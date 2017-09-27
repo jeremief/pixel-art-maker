@@ -6,6 +6,11 @@
 jQuery(document).ready(function(){
 
 
+function deleteGrid(){
+    $('#pixel_canvas').children().remove()
+    event.preventDefault();
+}
+
 function makeGrid() {
 
 //Capture values of grid
@@ -14,7 +19,7 @@ const width = $('#input_width').val();
 
 
 // Building grid html
-$('#pixel_canvas').children().remove()
+deleteGrid();
 
 let grid_html = "";
 
@@ -37,8 +42,21 @@ event.preventDefault();
 
 }
 
+function clear_grid(){
+    // Prevent the refresh of the page
+    // event.preventDefault();
+    let grid = $('#pixel_canvas').children();
+
+}
+
+function paint_grid(){
+
+}
+
+
 
 $("#grid_submit").click(makeGrid);
+$("#delete_grid").click(deleteGrid);
 
 
 $('#pixel_canvas').on('click', 'td', function(){
