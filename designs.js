@@ -5,12 +5,14 @@
 
 jQuery(document).ready(function(){
 
+//////////////////////////////
 
 function deleteGrid(){
     $('#pixel_canvas').children().remove()
     event.preventDefault();
 }
 
+//////////////////////////////
 
 function paintCell (cell, c_color) {
     let color = "";
@@ -20,8 +22,10 @@ function paintCell (cell, c_color) {
         color = c_color;
     }
     $(cell).attr('bgcolor',color);
+    // event.preventDefault();
 }
 
+//////////////////////////////
 function makeGrid() {
 
 //Capture values of grid
@@ -53,25 +57,41 @@ event.preventDefault();
 
 }
 
+//////////////////////////////
+
+
 function clearGrid(){
-    let grid = $('#pixel_canvas').children();
+    // let grid = $('#pixel_canvas').children();
+    // let grid = $('#pixel_canvas');
+    // grid.each(paintCell(cell,"white"))
+    // const str = JSON.stringify(grid);
+    // console.log("clear grid: " + str);
+    console.log("clear grid");
+    event.preventDefault();
 
 }
 
+//////////////////////////////
 function paintGrid(){
-
+    console.log("paint grid");
+    event.preventDefault();
 }
 
 
+//////////////////////////////
 
 $("#grid_submit").click(makeGrid);
+$("#clear_grid").click(clearGrid);
+$("#paint_grid").click(paintGrid);
 $("#delete_grid").click(deleteGrid);
 
+//////////////////////////////
 
 // Painting cell outside function
 $('#pixel_canvas').on('click', 'td', function(){
     paintCell(this, undefined);
 });
+//////////////////////////////
 
 });
 
