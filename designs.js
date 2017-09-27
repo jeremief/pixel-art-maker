@@ -12,8 +12,13 @@ function deleteGrid(){
 }
 
 
-function paintCell (cell) {
-    const color = $('#colorPicker').val();
+function paintCell (cell, c_color) {
+    let color = "";
+    if (c_color === undefined){
+        color = $('#colorPicker').val();
+    } else {
+        color = c_color;
+    }
     $(cell).attr('bgcolor',color);
 }
 
@@ -65,7 +70,7 @@ $("#delete_grid").click(deleteGrid);
 
 // Painting cell outside function
 $('#pixel_canvas').on('click', 'td', function(){
-    paintCell(this);
+    paintCell(this, undefined);
 });
 
 });
