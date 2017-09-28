@@ -13,7 +13,7 @@ function deleteGrid(){
 
 function paintCell (cell, c_color) {
     let color = "";
-    console.log("paintCell");
+    // console.log("paintCell");
     if (c_color === undefined){
         color = $('#colorPicker').val();
     } else {
@@ -60,13 +60,14 @@ function clearGrid(){
     for (let i in grid) {
         paintCell(grid[i],"white");
     }
-    // event.preventDefault();
-
 }
 
 function paintGrid(){
-    console.log("paint grid");
-    event.preventDefault();
+    let grid = $('#pixel_canvas td');
+    const color = $('#colorPicker').val();
+    for (let i in grid) {
+        paintCell(grid[i],color);
+    }
 }
 
 
