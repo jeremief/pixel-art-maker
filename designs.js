@@ -1,7 +1,3 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
 
 jQuery(document).ready(function(){
 
@@ -13,7 +9,6 @@ function deleteGrid(){
 
 function paintCell (cell, c_color) {
     let color = "";
-    // console.log("paintCell");
     if (c_color === undefined){
         color = $('#colorPicker').val();
     } else {
@@ -51,14 +46,13 @@ $('#pixel_canvas').prepend(grid_html);
 // Prevent the refresh of the page
 event.preventDefault();
 
-
 }
 
 
 function clearGrid(){
     let grid = $('#pixel_canvas td');
     for (let i in grid) {
-        paintCell(grid[i],"white");
+        paintCell(grid[i],'white');
     }
 }
 
@@ -71,13 +65,11 @@ function paintGrid(){
 }
 
 
-$("#grid_submit").click(makeGrid);
-$("#clear_grid").click(clearGrid);
-$("#paint_grid").click(paintGrid);
-$("#delete_grid").click(deleteGrid);
+$('#grid_submit').click(makeGrid);
+$('#clear_grid').click(clearGrid);
+$('#paint_grid').click(paintGrid);
+$('#delete_grid').click(deleteGrid);
 
-
-// Painting cell outside function
 $('#pixel_canvas').on('click', 'td', function(){
     paintCell(this, undefined);
 });
