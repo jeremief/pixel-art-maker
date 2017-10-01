@@ -30,7 +30,7 @@ You will find the following files:
 * design.js: the JavaScript code used for this project
 * screenshot.png (in /static/images/): a screenshot used for github.
 
-Once this is done, you can open index.html in your browser.
+Once this is done, you can open indexœ.html in your browser.
 
 
 

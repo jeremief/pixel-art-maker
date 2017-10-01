@@ -20,31 +20,31 @@ function paintCell (cell, c_color) {
 
 function makeGrid() {
 
-//Capture values of grid
-const height = $('#input_height').val();
-const width = $('#input_width').val();
+    //Capture values of grid
+    const height = $('#input_height').val();
+    const width = $('#input_width').val();
 
 
-// Building grid html
-deleteGrid();
+    // Building grid html
+    deleteGrid();
 
-let grid_html = "";
+    let grid_html = "";
 
-for (let i = 1; i <= height; i++) {
-    grid_html += "<tr>";
-    let j = 1;
-    while (j <= width) {
-        grid_html += "<td></td>";
-        j++;
+    for (let i = 1; i <= height; i++) {
+        grid_html += "<tr>";
+        let j = 1;
+        while (j <= width) {
+            grid_html += "<td></td>";
+            j++;
+        }
+        grid_html += "</tr>";
     }
-    grid_html += "</tr>";
-}
 
-$('#pixel_canvas').prepend(grid_html);
+    $('#pixel_canvas').prepend(grid_html);
 
 
-// Prevent the refresh of the page
-event.preventDefault();
+    // Prevent the refresh of the page
+    event.preventDefault();
 
 }
 
